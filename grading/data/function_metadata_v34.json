@@ -1,0 +1,78 @@
+[
+    {
+        "name": "finding_summary",
+        "description": "Findings Summarizer skill is built for summarizing or in other words explaining the meaning of findings found in an investigation. It extracts the values of the important fields from the data, such as risk object, severity, original source, mitre tactic and techniques, that are necessary to understand the findings and generates a summary based on the values of these fields. User query may have the words 'finding' or 'summerize' or 'summary' in it.",
+        "examples": ["summerize this incident", "write a summary of this incident", "summerize findings", "explain the findings", "list findings", "explain the detections that triggered this finding", "what is the meaning of this incident","Explain the search associated with Risk - 24 Hour Risk Threshold Exceeded - Rule", "Explain the searches involved in the findings"],
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "user_input": {
+                    "type": "string",
+                    "description": "User query asking a summary of the incident. User query has the word summary or summarize in it."
+                },
+                "output": {
+                    "type": "string",
+                    "description": "A natural language summary of the incident."
+                }
+            },
+            "required": []
+        }
+    },
+    {
+        "name": "investigation_report",
+        "description": "User query may have the word 'report' in it. Investigation report skill is built to generate a report for the investigation including key information that gives a mid to high level overview of the incident. The report would display information like the investigation title, disposition, urgency, time of first finding, investigation create time. In addition, it pulls important affected/compromised assents and entities from the input data and displays these as a list. It summarizes the main MITRE tactics and techniques involved as well as gives high level summary of analyst work notes. Finally, it gives a chronological timeline of events associated with the incident including the dates, times and descriptions of activity for investigation creation, finding discovery and notes being added by the analyst.",
+        "examples": ["write a report", "Generate a report", "Give me timeline of events","Provide a timeline of key events from analyst notes", "report", "make an investigation report", "generate final investigation report for incident"],
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "user_input": {
+                    "type": "string",
+                    "description": "User query asking to generate a report. User query has the word 'report' in it."
+                },
+                "output": {
+                    "type": "string",
+                    "description": "A splunk incident report."
+                }
+            },
+            "required": []
+        }
+    },
+    {
+        "name": "conversation_response",
+        "description": "Takes a user query or request with any kind of general text which may or may not be related to other functions. It also takes in any user request that is not handled by ['finding_summarizer', 'investigation_report', 'spl_writer'] and responds with security relevant information and pertinent information already in the chat history.",
+        "examples": ["as9kx", "why do we exist?", "Hi how are you?", "Are you an AI?", "I see you are a bot", "explain splunk", "what can you do with spl", "3 + 3", "what are your skills?", "help", "Are there any MITRE in this investigation", "explain the detections that triggered this finding"],
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "user_input": {
+                    "type": "string",
+                    "description": "User query with general question. If user's query doesn't match any other function, pick conversation_response."
+                },
+                "output": {
+                    "type": "string",
+                    "description": "Response answering the user question."
+                }
+            },
+            "required": []
+        }
+    },
+    {
+        "name": "spl_writer",
+        "description": "User input is either natural language or SPL query. Converts a natural language request into an SPL query that can be executed to fulfill the user's intent. User input can be an ask for data analysis, show data insights, creation of data entries, find information from data, data manipulation action, monitor activity, replace data, extract or give entities, show or display or get events/entities, extracting event data from last 24 hours or a time window, or an ask to write code.",
+        "examples": ["List available indices", "Create a record with a value of 'abcd123'","get me all risk entities related to this incident", "give me another query for this task", "top 10 IP addresses by count"," all error messages in the logs from yesterday","Show me all the notables for this host","average daily ingestion per month", "previous SPL is wrong","show me all notables for this host in the last 60 days","Find accounts associated with failed login attempts.","check _key field in lookup","INFO  CMBucket  Freezing bid","list all the hostnames in my deployment","who are the users associated with login attempts for linux in past 24 hours","list sources that are consuming a lot of GPU RAM","search aws access logs last 3 errors","show me all the indexes that do not have any logs", "get risk events in last 24 hours", "give me users associated with risk event in past 24 hours", "replace the risk object"],
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "intent": {
+                    "type": "string",
+                    "description": "A natural language description of the user's intent or request."
+                },
+                "output": {
+                    "type": "string",
+                    "description": "The SPL query that corresponds to the user's request."
+                }
+            },
+            "required": ["intent"]
+        }
+    }
+]

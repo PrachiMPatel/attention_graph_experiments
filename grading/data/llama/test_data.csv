@@ -1,0 +1,46 @@
+reference_skill,input
+investigation_report,generation report
+spl_writer,write spl to retrive all activity from URL_1
+spl_writer,writev spl to list available indxes
+investigation_report,write a report
+spl_writer,show me all notables for this hsot in the last 60 days
+finding_summarizer,can you give me a different version of Summarize Findings
+spl_writer,please run this revised search
+spl_writer,please generate SPL to summarise all process activity for the affected host over the last 24 hours
+spl_writer,Has this entity been part of other investigations recently ?
+finding_summarizer,can you summarize the key findings
+finding_summarizer,what findings are linked to this investigation
+spl_writer,Can you update the search to look for event ID = 4688
+spl_writer,Show me a list of all command line processes executed on the system=win-host-mhaag-attack-range-117 in the past 30 days
+finding_summarizer,summarize findings in this investigation
+spl_writer,generate spl
+spl_writer,Generated spl search index=notable OR index=risk\nuser=\
+spl_writer,Are there other notables or risk events for this AROAVNKMGLF3ARMH4KOLO:test@test.com in the last 30 days
+spl_writer,Write SPL that retrieves the total bucket count for each peer in a Splunk cluster and renames the 'label' field to 'peer'
+spl_writer,Show me all other notables for this host win-dc-mhaag-attack-range-304.attackrange.local in the last 30 days
+spl_writer,Generated spl search index=main sourcetype=WinEventLog\n    (Image=\
+conversation_response,What is the source and destination IP for this incident?
+spl_writer,List all user accounts involved in this incident.
+conversation_response,What are the MITRE ATT&CK techniques associated with this finding?
+conversation_response,Which assets or hosts are impacted in this investigation?
+conversation_response,What was the initial detection source for this incident?
+conversation_response,Are there any child or parent incidents linked to this case?
+conversation_response,What is the current finding count and severity breakdown?
+conversation_response,Who last edited the investigation notes?
+conversation_response,Can you list all annotations linked to this investigation’s findings?
+conversation_response,What are the response plans available for this incident?
+conversation_response,Show me the drilldown dashboards associated with this finding.
+conversation_response,What security domain does this finding belong to?
+conversation_response,Has this investigation passed its SLA completion time?
+conversation_response,Can you list all processes and process IDs associated with this incident?
+conversation_response,What were the primary sources of evidence for this investigation?
+conversation_response,What analytics story does this finding relate to?
+investigation_report,Provide a timeline of key events from the investigation notes.
+conversation_response,What is the overall risk score for the assets involved?
+conversation_response,What was the most recent action taken by the analyst on this incident?
+finding_summarizer,Can you provide a consolidated summary of the incident?
+conversation_response,How many findings are still open or unresolved?
+conversation_response,What’s the earliest and latest timestamp in the findings?
+conversation_response,Are there any notable risk scores for users involved?
+conversation_response,What is the host and process name associated with the suspicious activity?
+conversation_response,Who authored the most recent note in the investigation?

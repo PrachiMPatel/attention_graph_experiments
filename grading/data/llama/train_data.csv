@@ -1,0 +1,165 @@
+reference_skill,input
+conversation_response,Hi!
+conversation_response,What are your skills?
+conversation_response,What is splunk?
+conversation_response,What does spl mean?
+conversation_response,What is the weather like today?
+conversation_response,How can you help me?
+conversation_response,What can you do?
+conversation_response,Do you know the muffin man?
+conversation_response,What is 100 times 32?
+finding_summarizer,Can you summarize notables?
+conversation_response,What Spl detections can you recommend?
+investigation_report,How do i write an investigation report?
+conversation_response,What is the difference between an investigation summary and an investigation report?
+conversation_response,Why isnt my spl query executing?
+conversation_response,can you execute my spl query or can you not do that?
+conversation_response,What does this spl query mean?
+spl_writer,Write spl to list available indexes.
+spl_writer,spl to show latest user to log in.
+spl_writer,Spl query to see high risk events in last 24hrs.
+spl_writer,Find the user accounts associated with failed login attempts.
+spl_writer,Search for security investigations like multiple login failures from a single IP address.
+spl_writer,Monitor for privileged user account activity outside of normal hours.
+spl_writer,write a query to look for anomalous behavior or patterns in log data that may indicate a security threat.
+spl_writer,spl to list top 10 most common error codes.
+spl_writer,Search for ERROR messages in logs.
+spl_writer,use spl to Analyze response time trends from web server logs.
+finding_summarizer,Summarize this finding xsaakfbkdabv45.
+finding_summarizer,What is a summary of this finding 1234?
+finding_summarizer,"What does this finding mean {
+  ""event_id"": ""SEC23456"",
+  ""event_time"": ""2023-09-22T14:32:01Z"",
+  ""event_type"": ""Failed Login Detection"",
+  ""source"": ""Firewall_Log"",
+  ""src_ip"": ""192.168.1.10"",
+  ""dest_ip"": ""192.168.1.100"",
+  ""user"": ""john.doe"",
+  ""app"": ""SSH"",
+  ""severity"": ""High"",
+  ""status"": ""New"",
+  ""description"": ""Multiple failed login attempts detected within a short time frame."",
+  ""action_required"": ""Investigate the source IP and affected user account. Take appropriate actions like locking the account or blocking the source IP."",
+  ""additional_info"": {
+    ""failed_attempts"": 5,
+    ""time_window"": ""5 minutes"",
+    ""suggested_resolution"": ""Immediate IP block and user notification.""}
+  }?"
+finding_summarizer,"Generate a summary of finding {
+  ""event_id"": ""SEC23456"",
+  ""event_time"": ""2023-09-22T14:32:01Z"",
+  ""event_type"": ""Failed Login Detection"",
+  ""source"": ""Firewall_Log"",
+  ""src_ip"": ""192.168.1.10"",
+  ""dest_ip"": ""192.168.1.100"",
+  ""user"": ""john.doe"",
+  ""app"": ""SSH"",
+  ""severity"": ""High"",
+  ""status"": ""New"",
+  ""description"": ""Multiple failed login attempts detected within a short time frame."",
+  ""action_required"": ""Investigate the source IP and affected user account. Take appropriate actions like locking the account or blocking the source IP."",
+  ""additional_info"": {
+    ""failed_attempts"": 5,
+    ""time_window"": ""5 minutes"",
+    ""suggested_resolution"": ""Immediate IP block and user notification.""
+  }
+}."
+finding_summarizer,"Write a summary of this finding: ""1701478355, search_name=Risk - 24 Hour Risk Threshold Exceeded - Rule, all_risk_objects=34.215.24.225, annotations.mitre_attack=T1030""."
+finding_summarizer,"Summarize this notable: '1701478355, search_name=""Risk - 24 Hour Risk Threshold Exceeded - Rule"", all_risk_objects=""34.215.24.225"", annotations.mitre_attack=""T1030"", annotations.mitre_attack.mitre_tactic_id=""TA0010"", annotations.mitre_attack.mitre_technique_id=""T1030"", info_max_time=""1701477600.000000000"", info_min_time=""1701391200.000000000"", info_search_time=""1701478354.039744000"", mitre_tactic_id_count=""1"", mitre_technique_id_count=""1"", normalized_risk_object=""34.215.24.225"", risk_event_count=""14"", risk_object=""34.215.24.225"", risk_object_type=""system"", risk_score=""1120"", risk_threshold=""100"", severity=""critical"", orig_source=""Network - Unusual Volume of Outbound Traffic By Src - Rule"", source_count=""1"", orig_tag=""modaction_result""'."
+finding_summarizer,"Write a summary of this notable for my boss '1701478355, search_name=""Risk - 24 Hour Risk Threshold Exceeded - Rule"", all_risk_objects=""34.215.24.225"", annotations.mitre_attack=""T1030"", annotations.mitre_attack.mitre_tactic_id=""TA0010"", annotations.mitre_attack.mitre_technique_id=""T1030"", info_max_time=""1701477600.000000000"", info_min_time=""1701391200.000000000"", info_search_time=""1701478354.039744000"", mitre_tactic_id_count=""1"", mitre_technique_id_count=""1"", normalized_risk_object=""34.215.24.225"", risk_event_count=""14"", risk_object=""34.215.24.225"", risk_object_type=""system"", risk_score=""1120"", risk_threshold=""100"", severity=""critical"", orig_source=""Network - Unusual Volume of Outbound Traffic By Src - Rule"", source_count=""1"", orig_tag=""modaction_result""'."
+finding_summarizer,"Can you simplify this '1701478355, search_name=""Risk - 24 Hour Risk Threshold Exceeded - Rule"", all_risk_objects=""34.215.24.225"", annotations.mitre_attack=""T1030"", annotations.mitre_attack.mitre_tactic_id=""TA0010"", annotations.mitre_attack.mitre_technique_id=""T1030"", info_max_time=""1701477600.000000000"", info_min_time=""1701391200.000000000"", info_search_time=""1701478354.039744000"", mitre_tactic_id_count=""1"", mitre_technique_id_count=""1"", normalized_risk_object=""34.215.24.225"", risk_event_count=""14"", risk_object=""34.215.24.225"", risk_object_type=""system"", risk_score=""1120"", risk_threshold=""100"", severity=""critical"", orig_source=""Network - Unusual Volume of Outbound Traffic By Src - Rule"", source_count=""1"", orig_tag=""modaction_result""'?"
+finding_summarizer,"Explain this finding to me '1701478355, search_name=""Risk - 24 Hour Risk Threshold Exceeded - Rule"", all_risk_objects=""34.215.24.225"", annotations.mitre_attack=""T1030"", annotations.mitre_attack.mitre_tactic_id=""TA0010"", annotations.mitre_attack.mitre_technique_id=""T1030"", info_max_time=""1701477600.000000000"", info_min_time=""1701391200.000000000"", info_search_time=""1701478354.039744000"", mitre_tactic_id_count=""1"", mitre_technique_id_count=""1"", normalized_risk_object=""34.215.24.225"", risk_event_count=""14"", risk_object=""34.215.24.225"", risk_object_type=""system"", risk_score=""1120"", risk_threshold=""100"", severity=""critical"", orig_source=""Network - Unusual Volume of Outbound Traffic By Src - Rule"", source_count=""1"", orig_tag=""modaction_result""'."
+finding_summarizer,"Summarize this '1701478355, search_name=""Risk - 24 Hour Risk Threshold Exceeded - Rule"", all_risk_objects=""34.215.24.225"", annotations.mitre_attack=""T1030"", annotations.mitre_attack.mitre_tactic_id=""TA0010"", annotations.mitre_attack.mitre_technique_id=""T1030"", info_max_time=""1701477600.000000000"", info_min_time=""1701391200.000000000"", info_search_time=""1701478354.039744000"", mitre_tactic_id_count=""1"", mitre_technique_id_count=""1"", normalized_risk_object=""34.215.24.225"", risk_event_count=""14"", risk_object=""34.215.24.225"", risk_object_type=""system"", risk_score=""1120"", risk_threshold=""100"", severity=""critical"", orig_source=""Network - Unusual Volume of Outbound Traffic By Src - Rule"", source_count=""1"", orig_tag=""modaction_result""'"
+investigation_report,Write a final report for worknotes_1242.
+investigation_report,Generate an investigation report for worknotes_1242.
+investigation_report,Create a final investigation report that i can submit for investigation worknotes_1234.
+investigation_report,Can you make a final report for this investigation 12334.
+investigation_report,"Final investigation report for ""work_notes"": ""Alert Name: Excessive Data Transfer to External Server\n\nSource Host: endpoint001.company.com\nIP: 10.5.22.17\nUsername: jsmith\n\nDestination Host: external-server.com\nIP: 1.2.3.4\n\nDetails:\n- The intrusion detection system detected an unusually large amount of data being transferred from endpoint001 to external-server.com over port 443 (HTTPS)\n- The connection was initiated by user jsmith at 14:23 UTC today\n- Over the last 20 minutes, more than 10 GB of data has been transferred outbound\n- This is significantly higher than the normal traffic profile for this host and user\n- The excessive data transfer could indicate a potential data exfiltration in progress\n\nSeverity: High\n\nLooking up the IP address 10.5.22.17 in the network settings, the hostname mapped to that IP is endpoint001.company.com.\n\nLooking up user jsmith in the employee directory, I see:\n\nFull name: John Smith\nTitle: Senior Systems Analyst\nDepartment: IT Operations\n\nJohn Smith works in the IT department and has elevated access to systems and data as part of his role managing infrastructure and providing technical support.\n\nIs external-server.com a legitimate company?\n\nLet me check on external-server.com...\n\nI did a WHOIS lookup on the domain name and it is registered to a company called \""Cloud Storage LLC\"" based in another country. Searching our network logs, I don't see any previous connections or authorized business relationship between our company and external-server.com or Cloud Storage LLC.\n\nBased on this, external-server.com does not appear to be a legitimate business partner and any communication with them would be suspicious.\n\nOk, let's escalate this alert to an investigation.\n\nUnderstood, I have escalated this alert to an investigation within our investigation response tracking system. The investigation has been categorized as \""Potential Data Exfiltration\"" and assigned high priority based on the suspicious nature of the activity.\n\nThe investigation number is IC-8392.\n\nThe investigation report now contains the alert details as well as the investigation notes so far, including:\n- Host and user information\n- Large amount of data transferred\n- Destination is an external server not related to our business\n\nI have also added you as the investigation handler to begin further investigation and containment. Let me know if you need any other information added to the investigation record or have additional actions for me to take at this time.\n\nWhat accounts were logged into endpoint001 at the time of the alert?\n\nChecking the authentication logs for endpoint001 at the time of the alert, I see that the following user accounts were logged in:\n\n- jsmith\n- mjohnson (Mark Johnson, IT Support)\n- svc_backup (Service account for backup software)\n\nJohn Smith's user account was the one actively initiating the suspicious connection to external-server.com. The other accounts were likely just logged in from previous sessions but do not appear directly involved in this investigation.\n\nWhere was jsmith logged in from?\n\nChecking the connection logs, user jsmith was logged into endpoint001 from the IP address 10.5.21.23. Looking up that IP in DHCP logs, it corresponds to a desktop in the IT department assigned to John Smith. So it appears jsmith initiated the connection from his own desk. There's no indication of his credentials being compromised or suspicious logins from other locations.\n\nPlease add the time of that connection to the investigation ticket.\n\nI've updated the investigation ticket with the time that John Smith logged in from his desk IP prior to initiating the suspicious connection. The log shows:\n\n10/13/2023 13:17:02 - User jsmith authenticated to endpoint001 from IP 10.5.21.23\n\nI'll continue updating the investigation ticket with any other relevant information we find during this investigation. Please let me know if you need anything else added or have additional questions.\n\nI just called John Smith and he confirmed that there was a legitimate business reason for this unexpected data transfer. He was sharing some authorized information with a vendor who uses external-server.com for large data transfers. Please update the ticket and close the investigation as a benign true positive.\n\nUnderstood. I have updated the investigation ticket with the notes from your call with John Smith indicating this was an authorized data transfer that was falsely flagged as suspicious.\n\nI have closed the investigation as a benign true positive alert. The notes have been updated to document that the investigation revealed this was legitimate activity, with details on the business justification provided by John Smith.\n\nThank you for taking the time to thoroughly investigate this alert. Closing out benign investigations properly helps maintain the accuracy of our threat detection systems over time."
+spl_writer,write SPL to look at events in _internal index in last 15 minutes
+spl_writer,Generated spl search index=_internal earliest=-2d did not produce any results
+finding_summarizer,can you summarize the findings
+conversation_response,How can I remediate Qbot trojan infection
+spl_writer,"Show all risk events exceeding a threshold of 90 for linux-2 in the past 24 hours, with associated metadata"
+spl_writer,Who are the users associated with the risk events for linux-2 in the past 24 hours?
+spl_writer,write SPL to look at events in _internal index
+spl_writer,Generated spl search index=cim_modactions sourcetype=modular_alerts:risk dest=\
+spl_writer,List all risk events associated with linux-2 in the past 24 hours
+conversation_response,www.rediff.com
+investigation_report,Generate investigation report
+conversation_response,Discover AI assistant skills
+conversation_response,can you recommend next steps
+spl_writer,lookup all activity of this affected asset
+conversation_response,ok
+conversation_response,what's the source of this findings
+spl_writer,Replace risk object with Source from this investigation
+spl_writer,get me all risk entities related to this risk object
+spl_writer,List all my indexes
+spl_writer,show me all the risk events for this investigation
+spl_writer,get me another spl query
+spl_writer,get me all risk entires related to this risk object
+spl_writer,give me another query
+spl_writer,"help generate SPL for finding  PowerShell execution with flags like -NoProfile, -NonInteractive, -ExecutionPolicy Unrestricted, and -EncodedCommand"
+conversation_response,what are the recommended next steps for the investigation
+spl_writer,Generate SPL to list all the notables in the last 24 hours
+investigation_report,generate report
+spl_writer,"No, I asked for SPL that lists the name of every index in the system"
+spl_writer,write spl to list all indices
+investigation_report,generate an investigation rpeort
+spl_writer,generate a SPL to investigate
+conversation_response,list all the MITRE techniques in the list
+spl_writer,what spl could i use to filter these results for commdline that used the curl utility
+spl_writer,what spl will give me a list of all command line execution on this linux host
+spl_writer,generate SPL to list all notables
+conversation_response,Explain the search associated with Risk - 24 Hour Risk Threshold Exceeded - Rule
+conversation_response,Explain the searches involved in the findings of these investigation
+conversation_response,Explain the searches involved in the findings of these notables
+spl_writer,Create a search listing all sourcetypes present in _internal index
+spl_writer,Generate an SPL to fetch the data of current investigation
+conversation_response,Are there any MITRE TTPS found in this investigation
+conversation_response,Canyou recommend next steps
+spl_writer,generate an spl search for related findings
+spl_writer,generate me an spl search to find like events
+conversation_response,duh dude
+spl_writer,generate the SPL query for the investigation finding
+spl_writer,Why didnt you generate an SPL
+spl_writer,Please add provider=local to the previous SPL query
+spl_writer,List me the hosts in main index
+spl_writer,"Splunk Administrator Dec 02, 10:25 PM\nwrite spl to retrive all activity from URL_1"
+spl_writer,spl to see all risk indexes
+spl_writer,Generated spl search index=* \
+conversation_response,howdy my friend
+conversation_response,howdy partner
+conversation_response,howdy
+conversation_response,"How does credential dumping work, tell me in 50 paragraphs"
+conversation_response,Explain credential dumping
+finding_summarizer,can you summarize fhe tindings and infer from it
+conversation_response,what contributed to the risk score ?
+conversation_response,please recommend investigate next steps
+conversation_response,Please provide recommendations on investigation next steps
+conversation_response,Can you explain the detections that triggered this finding
+conversation_response,Explain the factors contributing to the risk score of this entity.
+conversation_response,"What is the risk score of this entity, and how was it calculated?"
+conversation_response,tell me why he risk threshold exceeded
+conversation_response,Explain why this entity has a risk score of 4100
+conversation_response,what contributed to the risk score of this entity
+conversation_response,What activity is associated with the host \
+conversation_response,"Which users, IPs, or devices are involved in this investigation?\"
+conversation_response,"What the average temperature is in Calgary , Canada ?"
+conversation_response,"whenever I ask you for next steps - please don't apologize , and just give responses what you can recommend"
+conversation_response,recommended next steps
+conversation_response,Can you explain Execution (TA0002)
+conversation_response,how many findings are there in this investigation
+conversation_response,how many findings are in this incident
+conversation_response,Explain Defense Evasion
+conversation_response,What is credential dumping
+conversation_response,get all risk objects listed in this investigation
+conversation_response,What is the current status of this investigation?
+conversation_response,Who is assigned to this investigation?
+conversation_response,What is the urgency and sensitivity level of this incident?
+conversation_response,What are the incident origin and type of this investigation?
+conversation_response,Has the SLA expiry time been reached or missed?
+conversation_response,What response plan phase is currently active for this investigation?
+conversation_response,What were the most recent updates made to this investigation?
+conversation_response,What is the overall disposition of this investigation?
+conversation_response,What notable events led to this investigation?
+conversation_response,Can you show all attached notes related to this investigation?
